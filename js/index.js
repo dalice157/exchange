@@ -18,11 +18,11 @@ exchange = (function(){
     var re = /^[0-9]*$/;
     
     if(!re.test(currency) || currency === '') {
-        result.text("請輸入數字！！");
+        result.text("請輸入數字！！").css("color","red");
     } else if(option === 'nt2us') {
-      result.text('US ' + outComeUS.toFixed(2));
+      result.text('US ' + outComeUS.toFixed(2)).css("color","blue");
     } else if(option === 'us2nt') {
-      result.text('NT ' + outComeNT.toFixed(2));
+      result.text('NT ' + outComeNT.toFixed(2)).css("color","blue");
     }
 	}
 
